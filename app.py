@@ -4,7 +4,7 @@ from flask import Flask, request, render_template
 app = Flask(__name__)
 
 # Load the trained model
-with open(r"C:\Users\99210\Downloads\mohan\trained_model.pkl", "rb") as f:
+with open(r"trained_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 # Define the route for the home page
